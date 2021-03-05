@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 
+// In this challenge you are asked to build a calendar app. This app has the following requirements:
+// Each square in the calendar is programmatically generated w/ the following info in it (3rd party library may be used to style/layout) Day
+// Number of tasks in the center of the square
+// Use state management (either Redux or useContext) to pass tasks down to the calendar
+// When the date is clicked on, a modal should pop us using data from state management to load tasks
+// Unit tests should be added to cover functionality
+
 export default function App() {
   const date = new Date();
   const [year, setYear] = useState(date.getFullYear());
